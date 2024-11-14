@@ -1,8 +1,6 @@
 
 <video class="video-shortcode" preload="{{ .Get "preload" }}" controls>
-    {{ with resources.Get "src" }} 
-    <source src="{{ .RelPermalink }}" type="{{ .Get "type" }}">
-    {{ end }}
+    <source src="{{ .Page.Path }}{{ .Get "src" }}" type="{{ .Get "type" }}">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
