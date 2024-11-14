@@ -1,6 +1,6 @@
 
 <video class="video-shortcode" preload="{{ .Get "preload" }}" controls>
-    <source src="{{ path.Dir .Page.Path }}{{ .Get "src" }}" type="{{ .Get "type" }}">
+    <source src="{{ .Site.BaseURL }}{{ path.Dir .Page.Path }}{{ .Get "src" }}" type="{{ .Get "type" }}">
     There should have been a video here but your browser does not seem
     to support it.
 </video>
