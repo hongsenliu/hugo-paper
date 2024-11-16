@@ -80,7 +80,7 @@
   }
 
   article {
-    @apply text-lg leading-[1.8] text-black dark:text-white;
+    @apply text-2xl leading-[1.8] text-black dark:text-white;
   }
 
   article code {
